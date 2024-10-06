@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  background-color: var(--bg-body);
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  --color-main: white;
+  --bg-body: #0a2131;
+  --main-bg-color: rgb(0, 175, 252);
+}
+
+/* =================================NAVBAR START============================== */
+
+.navbar {
+  position: absolute;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0c2b41;
+}
+
+.navbar a {
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.navbar .logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
+  font-weight: bolder;
+}
+.navbar .menu-burger {
+  display: none;
+}
+.mobile-menu {
+  margin-left: 0;
+}
+
+/* =================================NAVBAR END============================== */
+
+/* =================================FOOTER START============================== */
+footer {
+  display: flex;
+  background-color: #0c2b41;
+  padding: 15px 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+footer p {
+  position: absolute;
+  color: var(--main-bg-color);
+  top: 35px;
+}
+.logoReseau {
+  width: 20px;
+  height: 20px;
+}
+.nomReaseau {
+  color: var(--main-bg-color);
+}
+.Follow {
+  color: var(--main-bg-color);
+}
+
+/* =================================FOOTER END============================== */
+/* =================================MAIN DEBUT============================== */
+
+.pictureMe {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  opacity: 80%;
+  top: 120px;
+  left: 100px;
+}
+.prenom {
+  position: absolute;
+  color: var(--color-main);
+  top: 200px;
+  left: 550px;
+  line-height: 40px;
+}
+.name {
+  animation-duration: 5s;
+  animation-name: slidein;
+  overflow: hidden;
+  color: var(--main-bg-color);
+}
+@keyframes slidein {
+  from {
+    margin-left: 90%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.job {
+  animation-duration: 7s;
+  animation-name: sliderin;
+  overflow: hidden;
+  text-align: center;
+  color: var(--main-bg-color);
+}
+@keyframes sliderin {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.introductionText {
+  position: absolute;
+  color: var(--color-main);
+  top: 300px;
+  left: 500px;
+  padding-left: 100px;
+  padding-right: 150px;
+  font-size: large;
+}
+
+/* =================================MAIN END============================== */
+/* =================================RESPONSIVE START======================== */
+
+@media (768px <= width <= 1024px) {
+}
