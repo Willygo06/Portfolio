@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  background-color: var(--bg-body);
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  --color-main: white;
+  --bg-body: #0a2131;
+  --main-bg-color: rgb(0, 175, 252);
+}
+
+/* =================================NAVBAR START============================== */
+
+.navbar {
+  position: absolute;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0c2b41;
+}
+
+.navbar a {
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.navbar .logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
+  font-weight: bolder;
+}
+.navbar .menu-burger {
+  display: none;
+}
+.mobile-menu {
+  margin-left: 0;
+}
+
+/* =================================NAVBAR END============================== */
+
+/* =================================FOOTER START============================== */
+footer {
+  display: flex;
+  background-color: #0c2b41;
+  padding: 15px 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+footer p {
+  position: absolute;
+  color: var(--main-bg-color);
+  top: 35px;
+}
+.logoReseau {
+  width: 20px;
+  height: 20px;
+}
+.nomReaseau {
+  color: var(--main-bg-color);
+}
+.Follow {
+  color: var(--main-bg-color);
+}
+
+/* =================================FOOTER END============================== */
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.container .circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 100px;
+}
+
+.container .circle::before {
+  content: " ";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: var(--main-bg-color);
+  opacity: 0.8;
+}
+
+.container .circle::after {
+  content: " ";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: var(--color-main);
+  border: 15px solid var(--main-bg-color);
+  border-radius: 50%;
+  box-shadow: inset 0 5px 10px rgba(red, green, blue, 0.25),
+    0 10px 10px rgba(red, green, blue, 0.75),
+    0 -2px 2px rgba(255, 255, 255, 0.5) inset 0 4px 2px rgba(
+        red,
+        green,
+        blue,
+        0.25
+      ) inset 0 -2px 2px rgba(255, 255, 255, 0.5);
+}
+.container .circle .number span {
+  font-size: 0.5em;
+  font-weight: 500;
+}
+.container .circle .number {
+  position: relative;
+  color: var(--color-main);
+  z-index: 10;
+  line-height: 1em;
+  font-size: 2em;
+}
+
+.container .circle h4 {
+  position: relative;
+  color: var(--bg-body);
+  z-index: 10;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  line-height: 0.6em;
+}

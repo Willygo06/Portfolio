@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: var(--bg-body);
+  height: 100vh;
+  width: 100vw;
+}
+/* ------------ VARIABLES ------------ */
+:root {
+  --color-main: white;
+  --bg-body: #081b29;
+  --main-bg-color: rgb(0, 175, 252);
+}
+
+/* ================================NAVBAR START============================ */
+.navbar {
+  position: absolute;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0c2b41;
+}
+
+.navbar a {
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.navbar .logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
+  font-weight: bolder;
+}
+.navbar .menu-burger {
+  display: none;
+}
+.mobile-menu {
+  margin-left: 0;
+}
+
+/* ================================NAVBAR END============================== */
+/* ================================FOOTER START============================== */
+footer {
+  display: flex;
+  background-color: #0c2b41;
+  padding: 15px 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+footer p {
+  position: absolute;
+  color: var(--main-bg-color);
+  top: 35px;
+}
+.logoReseau {
+  width: 20px;
+  height: 20px;
+}
+.nomReaseau {
+  color: var(--main-bg-color);
+}
+.Follow {
+  color: var(--main-bg-color);
+}
+/* ===============================FOOTER END=============================== */
+
+.contactContainer {
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contactContainer form {
+  width: 600px;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background: #0c2b41;
+  backdrop-filter: blur(30px);
+  flex-wrap: wrap;
+}
+
+.contactTitle {
+  color: var(--color-main);
+  font-weight: 600;
+  line-height: 2;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+.contactContainer form input {
+  width: 250px;
+  height: 50px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid var(--color-main);
+  color: var(--color-main);
+}
+.contactContainer form input::placeholder {
+  color: var(--color-main);
+}
+.contactContainer form #lastName,
+.contactContainer form #mobile {
+  margin-left: 20px;
+}
+.contactContainer form h4 {
+  color: var(--color-main);
+  font-weight: 300;
+  width: 500px;
+  margin-top: 20px;
+}
+.contactContainer form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--color-main);
+  font-weight: 200;
+  color: var(--color-main);
+  font-size: medium;
+
+  padding: 10px;
+  outline: none;
+  min-height: 90px;
+  max-height: 90px;
+  min-width: 520px;
+  max-width: 520px;
+}
+.contactContainer form h4 {
+  font-size: 20px;
+}
+.contactContainer form #buttonSend {
+  border: none;
+  background: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-main);
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.contactContainer form #buttonSend:hover {
+  background: rgb(0, 175, 252);
+  color: var(--color-main);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}

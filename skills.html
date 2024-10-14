@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="skills.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
@@ -23,31 +23,43 @@
         <img src="/photo/images.png" alt="menu hamburger" class="menu-burger" />
       </nav>
     </header>
-
-    <main>
-<div class="container">
-
-    <div class="prenom">
-        <h1 class="name">Hello, I'm Gomes Fortes Wilfried.</h1>
-        <h3 class="job">Developpeur Full Stack junior</h3>
-    </div>
-
-    <div class="introduction">
-        <h5 class="introductionText">
-            Diplômé en Économie-Gestion, j'ai décidé de me reconvertir dans le développement web en suivant une formation intensive de 10 semaines. 
-            Actuellement en reprise d’études à Epitech, je suis à la recherche d'une alternance en programmation informatique. 
-            Mon objectif est de progresser, approfondir mes compétences techniques et m’épanouir dans ce domaine en relevant de nouveaux défis. 
-            Je suis motivé à intégrer une équipe dynamique où je pourrais contribuer tout en continuant à apprendre et à me perfectionner.
-        </h5>
-    </div>
-
-    <div class="picture">
-        <img src="/photo/profil.png" alt="profil photo" class="pictureMe">
-    </div>
-
-
+    
+      <div class="container">
+<div class="circle" data-degree="86"
+data-color="#DB0700">
+  <h2 class="number">90<span>%</span></h2>
+  <h4>HTML</h4>
 </div>
-    </main>
+
+<div class="circle" data-degree="75"
+data-color="#F58400">
+  <h2 class="number">90<span>%</span></h2>
+  <h4>CSS</h4>
+</div>
+
+<div class="circle" data-degree="60" 
+data-color="#F0DA00">
+  <h2 class="number">90<span>%</span></h2>
+  <h4>Javascript</h4>
+</div>
+
+<div class="circle" data-degree="70"
+data-color="#A300F5">
+  <h2 class="number">90<span>%</span></h2>
+  <h4>React</h4>
+</div>
+
+<div class="circle" data-degree="50"
+data-color="#003FEB">
+  <h2 class="number">90<span>%</span></h2>
+  <h4>React Native</h4>
+</div>
+
+
+
+
+      </div>
+
     <footer>
         <footer>
             <h3 class="Follow">Follow Me</h3>
@@ -79,5 +91,30 @@
           </div>
         </footer>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function 
+        (event){
+          let circle = document.querySelectorAll('.circle');
+          circle.forEach(function(progress){
+            let degree = 0;
+            var targetDegree = parseInt(progress.getAttribute
+            ('data-degree'))
+            let color = progress.getAttribute('data-color')
+            let number = progress.querySelector('.number')
+            
+            var interval = setInterval(function(){
+              degree += 1;
+              if (degree > targetDegree){
+                clearInterval(interval);
+                return
+              }
+              progress.style.background = `conic-gradient(${color} ${degree}%, #222 0%)`;
+              number.innerHTML = degree + '<span>%</span>';
+              number.style.color = color;
+            },50)
+          })
+        }
+      )
+    </script>
   </body>
 </html>

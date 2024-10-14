@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  background-color: var(--bg-body);
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  --color-main: white;
+  --bg-body: #0a2131;
+  --main-bg-color: rgb(0, 175, 252);
+}
+/* =========================================NAVBAR START=================================== */
+.navbar {
+  position: absolute;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0c2b41;
+}
+
+.navbar a {
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.navbar .logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
+  font-weight: bolder;
+}
+.navbar .menu-burger {
+  display: none;
+}
+.mobile-menu {
+  margin-left: 0;
+}
+
+/* =========================================NAVBAR END===================================== */
+
+/* =========================================FOOTER START===================================== */
+footer {
+  display: flex;
+  background-color: #0c2b41;
+  padding: 15px 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+footer p {
+  position: absolute;
+  color: var(--main-bg-color);
+  top: 35px;
+}
+.logoReseau {
+  width: 20px;
+  height: 20px;
+}
+.nomReaseau {
+  color: var(--main-bg-color);
+}
+.Follow {
+  color: var(--main-bg-color);
+}
+
+/* =========================================FOOTER END===================================== */
+.aboutMe {
+  min-height: 100vh;
+  width: 100%;
+  padding: 78px 0px;
+  background-color: var(--bg-body);
+}
+
+.photoAboutMe {
+  border: rgb(0, 175, 252);
+  box-shadow: 0 0 5px rgb(0, 175, 252), 0 0 25px rgb(0, 175, 252);
+  height: auto;
+  width: 30%;
+  border-radius: 5em;
+  transition: 0.5 ease;
+  margin-top: 20px;
+}
+.containerMain {
+  width: 1200px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutMeTitle {
+  color: var(--color-main);
+  font-size: 50px;
+  position: absolute;
+  top: 150px;
+}
+
+.aboutMe p {
+  color: var(--color-main);
+  letter-spacing: 1px;
+  margin-left: 30px;
+  margin-bottom: -140px;
+}
+
+button {
+  background: transparent;
+  color: rgb(0, 175, 252);
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid rgb(0, 175, 252);
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  position: absolute;
+  margin-top: 500px;
+}
+
+button:hover {
+  background: rgb(0, 175, 252);
+  color: var(--color-main);
+  border: 2px solid rgb(0, 175, 252);
+  box-shadow: 0 0 5px rgb(0, 175, 252), 0 0 25px rgb(0, 175, 252);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.cv {
+  right: 35%;
+}
+.pictureFoot {
+  height: 200px;
+  width: 100px;
+  position: absolute;
+  top: 90px;
+  right: 200px;
+  border-radius: 40%;
+}
