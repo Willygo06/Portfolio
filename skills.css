@@ -160,3 +160,84 @@ footer p {
   text-transform: uppercase;
   line-height: 0.6em;
 }
+.skills-card {
+  background-color: var(--color-main);
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: absolute;
+  left: 100px;
+  top: 360px;
+}
+.skills-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right var(--bg-body), var(--main-bg-color));
+  color: transparent;
+}
+
+.skills-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-list span {
+  background-color: var(--color-main);
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mindset-card {
+  background-color: var(--color-main);
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: absolute;
+  right: 150px;
+  top: 360px;
+}
+.mindset-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mindset-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right var(--bg-body), var(--main-bg-color));
+  color: transparent;
+}
+
+.mindset-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.mindset-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mindset-list span {
+  background-color: var(--color-main);
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
