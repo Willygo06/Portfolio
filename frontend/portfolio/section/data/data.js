@@ -13,32 +13,6 @@ export const TechStackData = [
 
 ];
 
-export const projects = [
-    {
-        name: "ÉcoTrack",
-        notes: "2025 - Projet de fin d'année (Pré-Msc)- Epitech Nice",
-        description: "Application mobile de suivi des habitudes écologiques ludique.",
-        technologies: ["React Native", "NodeJS + ExpressJS", "MongoDB"],
-    },
-
-    {
-        name: "Projet IRC",
-        notes: "2025 - Projet scolaire - Epitech Nice",
-        description: "Plateforme web de chat en temps réel",
-        technologies: ["ReactJS", "NodeJS + ExpressJS", "Socket.IO", "MongoDB"],
-    },
-
-    {
-        name: "Quest",
-        notes: "2023 - Projet de fin de formation - La Capsule Nice",
-        description: "Plateforme web multi-service livraison en ligne.",
-        technologies: ["ReactJS + NextJS+ TailwindCSS", "NodeJS + ExpressJS", "MongoDB"],
-        link: "https://quest-frontend-chi.vercel.app/"
-    }
-
-]
-
-
 export const hobbies = [
     "Football",
     "Jeux Vidéo",
