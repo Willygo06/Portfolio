@@ -4,6 +4,7 @@ import { Navbar } from '../section/partial/Navbar'
 import { Footer } from '../section/partial/Footer'
 import { TechStack } from '../section/partial/techStack.jsx'
 import { Projects } from '../section/partial/project.jsx'
+import { Contact } from '../section/partial/contact.jsx'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <TechStack />
       <Projects />
+      <Contact />
       <Footer />
     </>
   )
