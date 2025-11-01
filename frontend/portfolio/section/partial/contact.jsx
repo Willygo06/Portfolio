@@ -39,7 +39,7 @@ export const Contact = () => (
     </div>
 
     <p className="contact-footer">
-      © Merci pour ta visite ! 
+      © Merci pour votre visite ! 
     </p>
   </section>
 );

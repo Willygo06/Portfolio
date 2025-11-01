@@ -19,7 +19,6 @@ export const Navbar = () => {
 
   const links = [
     { label: "Accueil", href: "#accueil" },
-    { label: "À propos", href: "#à-propos" },
     { label: "Compétences", href: "#compétences" },
     { label: "Projets", href: "#projets" },
     { label: "Contact", href: "#contact" },
