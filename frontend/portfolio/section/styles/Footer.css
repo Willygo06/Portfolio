@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 60px;
-  background: rgb(56,55,55);
+  background: radial-gradient(circle at top left, #17173f, #000);
   color: #ffffff;
   text-align: center;
   font-size: 0.9rem;

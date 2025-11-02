@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/contact.css";
 
 export const Contact = () => (
-  <section className="contact-section">
+  <section id="contact" className="contact-section">
     <h2>Entrons en Contact</h2>
     <p className="contact-intro">
      Discutons ! Un projet en tête ? Envie de brainstormer ou juste de faire connaissance ? Écris-moi, je suis là.

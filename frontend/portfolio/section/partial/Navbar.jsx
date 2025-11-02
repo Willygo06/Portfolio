@@ -6,13 +6,17 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   // Effet de scroll pour fond translucide
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const target = document.querySelector(targetId);
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 80,
+        behavior: "smooth",
+      })
+    }
+    closeMenu();
+  }
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
@@ -32,7 +36,7 @@ export const Navbar = () => {
         {/* Menu Desktop */}
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={closeMenu}>
+            <a key={link.href} href={link.href} onClick={(e)=> handleScroll(e, link.href)}>
               {link.label}
             </a>
           ))}

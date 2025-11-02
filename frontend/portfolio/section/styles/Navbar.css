@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(56, 55, 55);
+  background: radial-gradient(circle at top left, #17173f, #000);
   transition: all 0.3s ease;
   z-index: 100;
 }
@@ -121,7 +121,7 @@
     right: 0;
     flex-direction: column;
     align-items: flex-start;
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
     backdrop-filter: blur(10px);
     width: 200px;
     padding: 1.5rem;

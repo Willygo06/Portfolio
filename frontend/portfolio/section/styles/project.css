@@ -54,19 +54,27 @@
 }
 
 .ecotrack {
-    width: 50%;
+    width: 25vh;
     height: auto;
     border-radius: 20px;
     transition: transform 0.4s ease;
 }
+
+.jobboard {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
 .projet-irc {
-    width: 80%;
+    width: 50vh;
     height: auto;
     border-radius: 20px;
     transition: transform 0.4s ease;
 }
 .quest {
-    width: 85%;
+    width: 50vh;
     height: auto;
     border-radius: 20px;
     transition: transform 0.4s ease;
