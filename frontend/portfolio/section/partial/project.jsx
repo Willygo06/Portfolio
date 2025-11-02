@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/project.css";
 
 export const Projects = () => (
-  <section className="projects-section">
+  <section id="projets" className="projects-section">
     <h2>Mes Projets</h2>
 
     {/* === ÉcoTrack === */}
@@ -51,7 +51,7 @@ export const Projects = () => (
     {/* === JobBoard === */}
     <div className="project-row">
       <div className="project-image-container">
-        <img src="/src/assets/JobBoard.jpg" alt="JobBoard" />
+        <img className="jobboard" src="/src/assets/Indeed.jpg" alt="JobBoard" />
       </div>
       <div className="project-content">
         <h3>JobBoard</h3>

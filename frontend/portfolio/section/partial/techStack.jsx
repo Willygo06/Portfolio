@@ -3,7 +3,7 @@ import { techStack } from "../data/data.js";
 import "../styles/techStack.css";
 
 export const TechStack = () => (
-  <section className="tech-section">
+  <section id="compétences" className="tech-section">
     <h2>Compétences Techniques</h2>
     <div className="tech-grid">
       
