@@ -5,7 +5,7 @@ import Profile from "/src/assets/Wilfried1.jpg";
 
 export const Hero = () => {
     return (
-    <section id="acccueil" className="hero-section">
+    <section id="accueil" className="hero-section">
         <div className="hero-bg"></div>
         <div className="hero-content">
             <div className="hero-text">
