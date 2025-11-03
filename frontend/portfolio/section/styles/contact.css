@@ -1,0 +1,98 @@
+:root {
+  --neon-blue: #00e0ff;
+  --dark-bg: #0b0c1a;
+  --text-color: #e2e2e2;
+}
+
+.contact-section {
+  padding: 100px 10%;
+  color: var(--text-color);
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00e0ff, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  font-size: 1.1rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-card {
+  background: rgba(10, 10, 25, 0.7);
+  padding: 25px 50px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+.contact-card i {
+  font-size: 1.5rem;
+  color: var(--neon-blue);
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/* --- Effet de bordure animée (hologramme) --- */
+.neon-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, #00f0ff, #0077ff, #00f0ff);
+  background-size: 300% 300%;
+  animation: border-flow 6s linear infinite;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  padding: 2px;
+  pointer-events: none;
+}
+
+@keyframes border-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contact-footer {
+  margin-top: 80px;
+  font-size: 0.9rem;
+  color: #666;
+  letter-spacing: 1px;
+}

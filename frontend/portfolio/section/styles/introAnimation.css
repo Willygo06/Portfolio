@@ -1,0 +1,55 @@
+    .intro-container {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #000428, #004e92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ball-container {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  animation: roll 3s linear infinite;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.6));
+}
+
+.intro-title {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  text-shadow: 0 0 10px #00e0ff;
+  animation: fadeIn 2s ease forwards;
+}
+
+.highlight {
+  color: #00e0ff;
+}
+
+@keyframes roll {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

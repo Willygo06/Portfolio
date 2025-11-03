@@ -1,0 +1,213 @@
+:root {
+  --primary-color: rgb(10, 10, 68);
+  --secondary-color:  #17173f;
+  --threery-color: #000;
+}
+
+.projects-section {
+  /* background: radial-gradient(circle at top left, #17173f, #000); */
+  color: #fff;
+  padding: 100px 10%;
+  font-family: "Orbitron", sans-serif;
+}
+
+.projects-section h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 80px;
+  background: linear-gradient(90deg, #00e0ff, #0077ff);
+  -webkit-background-clip: text;    
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Ligne de projet --- */
+.project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* --- Image --- */
+.project-image-container {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-image-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+}
+
+.project-image-container:hover img {
+  transform: scale(1.1);
+}
+
+.ecotrack {
+    width: 25vh;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.jobboard {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.projet-irc {
+    width: 50vh;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+.quest {
+    width: 50vh;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+/* --- Contenu texte --- */
+.project-content {
+  flex: 1;
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  background: rgba(10, 10, 25, 0.7);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow:hidden;
+}
+
+.project-content::before,
+.project-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.project-content::before {
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, #ff0000, #0011ff, #fbff01, #01ff16 );
+  background-size: 300% 300%;
+  animation: border-move 6s linear infinite;
+  mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  padding: 2px;
+}
+
+.project-content:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+.project-content:hover h3,
+.project-content:hover p,
+.project-content:hover ul li {
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+.project-content h3,
+.project-content p,
+.project-content ul li {
+ transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+@keyframes border-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.project-content:hover::before {
+    animation-play-state: paused;
+}
+
+.project-content::after {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.15) inset;
+    animation: inner-dashoffset 6s linear infinite;
+}
+.project-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.project-content h3 {
+  font-size: 1.6rem;
+  color: #aeeaff;
+  margin-bottom: 8px;
+}
+
+.project-notes {
+  font-size: 0.9rem;
+  color: #aaa;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.project-tech {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+.project-tech li {
+  font-size: 0.85rem;
+  color: #00e0ff;
+  margin-bottom: 4px;
+}
+
+.project-link {
+  color: #00e0ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 950px) {
+  .project-row,
+  .project-row.reverse {
+    flex-direction: column;
+  }
+}
