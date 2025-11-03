@@ -1,8 +1,10 @@
-#root {
+body, #root {
   margin: 0;
   padding: 0;
   text-align: center;
   scroll-behavior: smooth;
+  background: radial-gradient(circle at top left, #17173f, #000);
+  overflow-x: hidden;
 }
 
 .logo {
