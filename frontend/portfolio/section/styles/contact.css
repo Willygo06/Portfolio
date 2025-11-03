@@ -5,7 +5,6 @@
 }
 
 .contact-section {
-  background: radial-gradient(circle at top left, #17173f, #000);
   padding: 100px 10%;
   color: var(--text-color);
   text-align: center;

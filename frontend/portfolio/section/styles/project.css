@@ -5,7 +5,7 @@
 }
 
 .projects-section {
-  background: radial-gradient(circle at top left, #17173f, #000);
+  /* background: radial-gradient(circle at top left, #17173f, #000); */
   color: #fff;
   padding: 100px 10%;
   font-family: "Orbitron", sans-serif;
