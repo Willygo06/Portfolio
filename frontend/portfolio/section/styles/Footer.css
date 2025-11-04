@@ -19,11 +19,6 @@
   padding: 0;
 }
 
-/* Animation subtile au survol */
-.footer:hover {
-  background: #f0f4ff;
-  color: #2563eb;
-}
 
 /* Emoji ❤️ légèrement animé */
 .footer span.heart {
