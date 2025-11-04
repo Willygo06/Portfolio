@@ -13,7 +13,6 @@ export const Contact = () => (
         href="mailto:Wilfried.gomesfortes@gmail.com"
         className="contact-card neon-border"
       >
-        <i className="fa-solid fa-envelope"></i>
         <span>Email</span>
       </a>
 
@@ -23,7 +22,6 @@ export const Contact = () => (
         rel="noopener noreferrer"
         className="contact-card neon-border"
       >
-        <i className="fa-brands fa-github"></i>
         <span>GitHub</span>
       </a>
 
@@ -33,7 +31,6 @@ export const Contact = () => (
         rel="noopener noreferrer"
         className="contact-card neon-border"
       >
-        <i className="fa-brands fa-linkedin"></i>
         <span>LinkedIn</span>
       </a>
     </div>
