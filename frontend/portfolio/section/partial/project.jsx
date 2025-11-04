@@ -8,7 +8,7 @@ export const Projects = () => (
     {/* === ÉcoTrack === */}
     <div className="project-row">
       <div className="project-image-container">
-        <img className="ecotrack" src="public/images/EcoTrack.jpg" alt="ÉcoTrack" />
+        <img className="ecotrack" src="/images/EcoTrack.jpg" alt="ÉcoTrack" />
       </div>
       <div className="project-content">
         <h3>ÉcoTrack</h3>
@@ -29,7 +29,7 @@ export const Projects = () => (
     {/* === Projet IRC === */}
     <div className="project-row reverse">
       <div className="project-image-container">
-        <img className="projet-irc" src="public/images/Projet-IRC.png" alt="Projet IRC" />
+        <img className="projet-irc" src="/images/Projet-IRC.png" alt="Projet IRC" />
       </div>
       <div className="project-content">
         <h3>Projet IRC</h3>
@@ -51,7 +51,7 @@ export const Projects = () => (
     {/* === JobBoard === */}
     <div className="project-row">
       <div className="project-image-container">
-        <img className="jobboard" src="public/images/Indeed.jpg" alt="JobBoard" />
+        <img className="jobboard" src="/images/Indeed.jpg" alt="JobBoard" />
       </div>
       <div className="project-content">
         <h3>JobBoard</h3>
@@ -72,7 +72,7 @@ export const Projects = () => (
     {/* === Quest === */}
     <div className="project-row reverse">
       <div className="project-image-container">
-        <img className="quest" src="public/images/Quest.png" alt="Quest" />
+        <img className="quest" src="/images/Quest.png" alt="Quest" />
       </div>
       <div className="project-content">
         <h3>Quest</h3>

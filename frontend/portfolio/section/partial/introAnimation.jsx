@@ -18,7 +18,7 @@ export const IntroAnimation = ({onFinish}) => {
   return (
     <div className={`intro-container ${fadeOut ? "fade-out" : ""}`}>
       <div className="ball-container">
-        <img src="public/images/Ballon-ligue1.png" alt="Football" className="ball" />
+        <img src="/images/Ballon-ligue1.png" alt="Football" className="ball" />
       </div>
       <h1 className="intro-title">
         <span className="highlight">Bienvenue sur mon portfolio</span>

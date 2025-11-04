@@ -24,7 +24,7 @@ export const Hero = () => {
             </div>
 
             <div className="hero-image-container">
-            <img src="public/images/Wilfried1.jpg" alt="Wilfried" className="hero-image" />
+            <img src="/images/Wilfried1.jpg" alt="Wilfried" className="hero-image" />
             <div className="holo-ring"></div>
         </div>
         </div>
