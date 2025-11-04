@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles/hero.css";
-import Profile from "/src/assets/Wilfried1.jpg";
-
 
 export const Hero = () => {
     return (
@@ -26,7 +24,7 @@ export const Hero = () => {
             </div>
 
             <div className="hero-image-container">
-            <img src={Profile} alt="Wilfried" className="hero-image" />
+            <img src="public/images/Wilfried1.jpg" alt="Wilfried" className="hero-image" />
             <div className="holo-ring"></div>
         </div>
         </div>

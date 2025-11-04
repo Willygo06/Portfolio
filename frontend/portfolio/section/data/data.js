@@ -1,25 +1,25 @@
 export const techStack = {
   frontend: [
-    {name: "ReactJS", logo: "../src/assets/react-2.svg"},
-    {name: "TailwindCSS", logo: "../src/assets/tailwind-css-2.svg"},
-    {name: "JavaScript", logo: "../src/assets/javascript-1.svg"},
-    {name: "TypeScript", logo: "../src/assets/typescript-2.svg"},
-    {name: "React Native", logo: "../src/assets/react-2.svg"}
+    {name: "ReactJS", logo: "public/images/react-2.svg"},
+    {name: "TailwindCSS", logo: "public/images/tailwind-css-2.svg"},
+    {name: "JavaScript", logo: "public/images/javascript-1.svg"},
+    {name: "TypeScript", logo: "public/images/typescript-2.svg"},
+    {name: "React Native", logo: "public/images/react-2.svg"}
   ],
   backend: [
-    {name: "NodeJS", logo: "../src/assets/nodejs-2.svg"},
-    {name: "Java", logo: "../src/assets/java-4.svg"},
-    {name: "Python", logo: "../src/assets/python-5.svg"}
+    {name: "NodeJS", logo: "public/images/nodejs-2.svg"},
+    {name: "Java", logo: "public/images/java-4.svg"},
+    {name: "Python", logo: "public/images/python-5.svg"}
   ],
 
   database: [
-    {name: "MongoDB", logo: "../src/assets/mongodb-icon-2.svg"},
-    {name: "MySQL", logo: "../src/assets/mysql-3.svg"},
+    {name: "MongoDB", logo: "public/images/mongodb-icon-2.svg"},
+    {name: "MySQL", logo: "public/images/mysql-3.svg"},
   ],
 
   tools: [
-    {name: "Docker", logo: "../src/assets/docker.svg"},
-    {name: "Github", logo: "../src/assets/github-icon-1.svg"},
+    {name: "Docker", logo: "public/images/docker.svg"},
+    {name: "Github", logo: "public/images/github-icon-1.svg"},
   ]
 
 };
